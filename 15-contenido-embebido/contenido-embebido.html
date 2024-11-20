@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contenido embebido</title>
+</head>
+<!-- 
+    ¿Que es el contenido embebido?
+    -- Es todo el contenido que nos traemos desde fuera.
+    -- Estos archivos son los que mas peso(tamaño) añaden a un sitio web
+    -- Los tipos mas conocidos son:
+        --Imagenes
+        --Audio
+        --Video
+        --Iframe
+
+    DPR (Device Pixel Ratio)
+        Es la relación que existe entre los píxeles reales que tiene el dispositivo y los píxeles que tenemos disponibles para "pintar" contenido
+
+    DPR = pixeles reales / pixeles disponibles
+ -->
+ <!-- <style>
+   
+    img{
+        max-width: 100%;
+        border-radius: 50%;
+        width: 50px;
+    }
+ </style> -->
+<body>
+    <h1>ontenido Embebido</h1>
+
+    <!-- <div>
+        <img src="/15-contenido-embebido/assets/images/perfil-HdV.webp" alt="profile image">
+    </div> -->
+ <img srcset="
+    /15-contenido-embebido/assets/images/portada.webp,
+    /15-contenido-embebido/assets/images/portada.jpg,
+    /15-contenido-embebido/assets/images/portada-mobile.webp 2x,
+    /15-contenido-embebido/assets/images/portada-mobile.jpg 2x" src="/contenido-embebido/assets/images/portada.jpg"
+        alt="Imagen de portada">
+
+          <audio src="/15-contenido-embebido/assets/audio/oomiee.mp3" controls></audio>
+        <video src="/15-contenido-embebido/assets/video/Creux De Van.mp4" controls
+        poster="/contenido-embebido/assets/images/portada.jpg"></video>
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0e_lA0HLI3s"></iframe>
+    <h2>Gatos</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eos ea ab in, quasi fugiat tempora totam
+        voluptatem veritatis nisi aliquid nesciunt asperiores repudiandae natus labore, amet officia perspiciatis quia.
+    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eos ea ab in, quasi fugiat tempora totam
+        voluptatem veritatis nisi aliquid nesciunt asperiores repudiandae natus labore, amet officia perspiciatis quia.
+    </p>
+    <figure>
+
+        <img src="https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            alt="gato tumbado">
+        <figcaption>Gato común tumbado</figcaption>
+
+    </figure>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eos ea ab in, quasi fugiat tempora totam
+        voluptatem veritatis nisi aliquid nesciunt asperiores repudiandae natus labore, amet officia perspiciatis quia.
+    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eos ea ab in, quasi fugiat tempora totam
+        voluptatem veritatis nisi aliquid nesciunt asperiores repudiandae natus labore, amet officia perspiciatis quia.
+    </p>
+</body>
+</html>
